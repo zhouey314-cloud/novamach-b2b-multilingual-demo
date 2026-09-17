@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://novamach-demo.example/</loc></url>
+  <url><loc>https://novamach-demo.example/products</loc></url>
+  <url><loc>https://novamach-demo.example/products/nx-500-five-axis</loc></url>
+  <url><loc>https://novamach-demo.example/solutions</loc></url>
+  <url><loc>https://novamach-demo.example/cases</loc></url>
+  <url><loc>https://novamach-demo.example/about</loc></url>
+  <url><loc>https://novamach-demo.example/news</loc></url>
+  <url><loc>https://novamach-demo.example/contact</loc></url>
+  <url><loc>https://novamach-demo.example/brochure</loc></url>
+</urlset>

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+outputs/
+work/
+sales-kit/
+*.zip
+*.pdf
+*.tsbuildinfo
+.DS_Store
+FINAL_DELIVERY_REPORT.md
+TOMORROW_HANDOFF_REPORT.md
+CODEX_MASTER_TASK.md
+DELIVERY_ACCEPTANCE.md
+ASSET-PROMPTS.md
