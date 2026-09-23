@@ -1,5 +1,7 @@
 # NovaMach Industrial — B2B 外贸多语言独立站 Demo
 
+![Fictional NovaMach home page](screenshots/novamach-home.webp)
+
 NovaMach is a fictional brand. This repository is a self-built demonstration project using sample data.
 
 > **Demonstration Website / Sample Data**
@@ -111,6 +113,7 @@ More public engineering notes are in [`docs/`](docs/).
 
 构建时会根据 `VITE_SITE_URL` 生成 `robots.txt` 和 `sitemap.xml`。NovaMach 是虚构 Demo，因此默认 `VITE_ALLOW_INDEXING=false`，整站禁止索引；`/admin-demo`、`/capability-card` 与 `/customer-deck` 即使在正式索引模式下也不会进入 sitemap。
 
-## Sales Kit
+## Public release boundary
 
-渠道材料位于 `sales-kit/`，已明确拆分为 `01-end-customer/`、`02-channel/` 与 `03-internal/`。终端客户目录只包含可直接转发资料；报价、技术边界与 Release Report 只在 `03-internal/`。
+This repository excludes the original internal sales kit and channel materials.
+Its screenshots and examples use a fictional brand and sample data.
