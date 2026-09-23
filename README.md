@@ -4,6 +4,8 @@
 
 NovaMach is a fictional brand. This repository is a self-built demonstration project using sample data.
 
+Existing live preview: <https://0-1-b2b-demo-demo-novamach.vercel.app/>. This is an earlier deployed snapshot; the latest repository commit and its placeholder canonical/SEO URLs have not been verified as redeployed. Do not treat the URL as a production customer site.
+
 > **Demonstration Website / Sample Data**
 >
 > 这是一个虚构品牌的产品演示项目。网站中的公司、产品、参数、认证、客户、案例、联系方式和业务数据均为模拟内容，不构成真实声明。
