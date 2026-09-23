@@ -14,7 +14,7 @@ export const defaultInquiries:DemoInquiry[]=[
   {id:'RFQ-1022',name:'Sample Buyer 03',company:'Example Packaging Ltd.',email:'buyer03@example.com',market:'Brazil',product:'PK-60 Packaging Line',requirements:'Sample end-of-line packaging workflow request.',createdAt:'2026-08-28T08:42:00.000Z',status:'Qualified'},
 ]
 
-export const defaultSeo:SeoSettings={siteTitle:'NovaMach Industrial | Precision Equipment Demo',description:'Sample multilingual B2B machinery website for sales demonstration.',canonical:'https://novamach-demo.example'}
+export const defaultSeo:SeoSettings={siteTitle:'NovaMach Industrial | Precision Equipment Demo',description:'Sample multilingual B2B machinery website for sales demonstration.',canonical:'https://0-1-b2b-demo-demo-novamach.vercel.app'}
 
 function read<T>(key:string,fallback:T):T{try{const value=localStorage.getItem(key);return value?JSON.parse(value) as T:fallback}catch{return fallback}}
 function write<T>(key:string,value:T){localStorage.setItem(key,JSON.stringify(value));window.dispatchEvent(new Event('novamach-demo-updated'))}

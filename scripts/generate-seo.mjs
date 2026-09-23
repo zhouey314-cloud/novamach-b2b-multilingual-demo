@@ -1,7 +1,7 @@
 import {writeFile} from 'node:fs/promises'
 
 const vercelDomain=process.env.VERCEL_PROJECT_PRODUCTION_URL||process.env.VERCEL_URL
-const siteUrl=(process.env.VITE_SITE_URL||(vercelDomain?`https://${vercelDomain}`:'https://novamach-demo.example')).replace(/\/$/,'')
+const siteUrl=(process.env.VITE_SITE_URL||(vercelDomain?`https://${vercelDomain}`:'https://0-1-b2b-demo-demo-novamach.vercel.app')).replace(/\/$/,'')
 const allowIndexing=process.env.VITE_ALLOW_INDEXING==='true'
 const routes=['/','/products','/products/nx-500-five-axis','/solutions','/cases','/about','/news','/contact','/brochure']
 const urls=routes.map(route=>`  <url><loc>${siteUrl}${route}</loc></url>`).join('\n')
