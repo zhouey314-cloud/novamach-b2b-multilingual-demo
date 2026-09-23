@@ -1,12 +1,29 @@
-# Interview notes
+# NovaMach 工业站 Demo — 面试讲述卡
 
-1. **Why?** To make novamach-b2b-multilingual-demo an inspectable, reusable portfolio artifact.
-2. **Hardest problem?** Multilingual content and clear demo boundary.
-3. **Why this architecture?** Keep core workflow logic separate from UI and external providers.
-4. **Where is AI?** Read the README for the precise AI or prompt boundary; do not infer model quality from tests.
-5. **What stays human?** Domain truth, final review and external publishing decisions.
-6. **How verified?** Run the documented tests and inspect their actual assertions.
-7. **Failure learned?** Local RFQ storage cannot be presented as real lead collection.
-8. **Redo?** Add stronger, reviewed regression cases before claiming broader reliability.
-9. **Production scale?** Add authentication, observability, durable storage and verified integrations as relevant.
-10. **My contribution?** The public repository's code, documentation and tests; avoid claiming third-party or company work as original.
+## 60 秒
+
+我做这个自建项目是为了解决“B2B 外贸站要完整展示产品到 RFQ 路径，又不能虚构真实企业背书”。用 React、TypeScript、Vite、Vercel 做了三语产品/内容、多路由、RFQ 到演示后台的本地闭环、响应式和默认 noindex。最难的是让三语言、移动端及虚构声明同时保持一致。目前证据是lint/typecheck/build/smoke 及线上桌面/移动、直达路由和样本 RFQ 检查。但品牌、产品、认证、案例、询盘全是样本；RFQ 不会发送到服务器；如果真实落地，下一步是客户审核真实文案/图片、接入安全询盘端点与后台权限后再开放索引。
+
+## 3 分钟
+
+先演示核心路径：三语产品/内容、多路由、RFQ 到演示后台的本地闭环、响应式和默认 noindex。再打开仓库中的测试与案例页，解释为什么把状态/证据留在可检查的位置。重点讲一个取舍：让三语言、移动端及虚构声明同时保持一致。最后明确验证范围：lint/typecheck/build/smoke 及线上桌面/移动、直达路由和样本 RFQ 检查；运行时无生成式 AI；测试集中在站点功能和内容边界。不把演示、合成样本和生产效果混为一谈。
+
+## 10 分钟技术深挖
+
+1. 展示 README 的 Quick Start 与架构图/目录。
+2. 从一个输入走到状态变化或输出，指出 三语产品/内容、多路由、RFQ 到演示后台的本地闭环、响应式和默认 noindex 对应的源代码。
+3. 现场说明最难问题：让三语言、移动端及虚构声明同时保持一致；对照测试或复现步骤。
+4. 解释失败路径及限制：品牌、产品、认证、案例、询盘全是样本；RFQ 不会发送到服务器。
+5. 用 客户审核真实文案/图片、接入安全询盘端点与后台权限后再开放索引 说明真正上线的优先级和验收证据。
+
+## 九个常见追问
+
+1. **为什么这样设计架构？** 为了把 三语产品/内容、多路由、RFQ 到演示后台的本地闭环、响应式和默认 noindex 的核心规则与展示/外部依赖分开，便于检查失败边界。
+2. **最难的 bug/取舍？** 让三语言、移动端及虚构声明同时保持一致；请指向对应测试或演示复现，避免编造线上事故。
+3. **用了什么框架？** React、TypeScript、Vite、Vercel。选型服务于静态或离线演示，不等同生产选型结论。
+4. **上线还差什么？** 客户审核真实文案/图片、接入安全询盘端点与后台权限后再开放索引。
+5. **如何防止误用？** 品牌、产品、认证、案例、询盘全是样本；RFQ 不会发送到服务器；任何不可逆外部动作需人工确认。
+6. **怎么测试？** lint/typecheck/build/smoke 及线上桌面/移动、直达路由和样本 RFQ 检查。先跑 README 命令，再看具体断言，不把 200 或编译当成产品验收。
+7. **AI 在哪里？** 运行时无生成式 AI；测试集中在站点功能和内容边界。不要把确定性规则、提示词或可选模型接口说成已验证的 AI 效果。
+8. **哪些是 Mock？** 品牌、产品、认证、案例、询盘全是样本；RFQ 不会发送到服务器。
+9. **模型怎么评测？个人贡献是什么？** 运行时无生成式 AI；测试集中在站点功能和内容边界。我负责公开仓库里可见的实现、测试和说明；未核验的业务结果与第三方工作不纳入我的贡献。
