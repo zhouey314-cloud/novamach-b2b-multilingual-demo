@@ -2,15 +2,15 @@
 
 ## Vercel（推荐）
 
-V1.1 已完成正式预览部署：<https://0-1-b2b-demo-demo-novamach.vercel.app>。
+当前公开 Demo：<https://0-1-b2b-demo-demo-novamach.vercel.app>。2026-09-23 使用现有 `builder-95cb/0-1-b2b-demo-demo-novamach` Vercel 项目重建代码提交 `01f9eeb`；部署 ID `dpl_4xCpTFUm3vGTRpq4kg7qnsYtV6JH`，生产别名已确认指向该部署。此项目尚未连接 Git 自动部署，后续 `git push` 不会自动更新网站。
 
 后续重新部署可在项目根目录执行：
 
 ```bash
-npx vercel deploy --prod -y --build-env VITE_ALLOW_INDEXING=false
+npx vercel deploy --prod -y --build-env VITE_SITE_URL=https://0-1-b2b-demo-demo-novamach.vercel.app --build-env VITE_ALLOW_INDEXING=false
 ```
 
-构建会自动读取 Vercel 提供的实际域名作为 `VITE_SITE_URL`。根目录 `vercel.json` 已配置 SPA 路由回退；虚构 Demo 保持全站 `noindex,nofollow`。
+请显式传入当前 Demo URL；不要依赖临时部署域名。根目录 `vercel.json` 已配置 SPA 路由回退；虚构 Demo 保持全站 `noindex,nofollow`。
 
 ## Netlify
 

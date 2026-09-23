@@ -4,7 +4,7 @@
 
 NovaMach is a fictional brand. This repository is a self-built demonstration project using sample data.
 
-Existing live preview: <https://0-1-b2b-demo-demo-novamach.vercel.app/>. This is an earlier deployed snapshot; the latest repository commit and its placeholder canonical/SEO URLs have not been verified as redeployed. Do not treat the URL as a production customer site.
+**Live Demo:** <https://0-1-b2b-demo-demo-novamach.vercel.app/> · Code commit `01f9eeb` · rebuilt 2026-09-23 on the existing Vercel project. The current production alias was checked against the rebuilt asset names, seven direct routes, canonical/OG URLs, robots, desktop/mobile layout, language selection and a synthetic RFQ-to-admin round trip. This is a fictional product demo, not a customer site.
 
 > **Demonstration Website / Sample Data**
 >
