@@ -1,5 +1,7 @@
 # NovaMach Industrial — B2B 外贸多语言独立站 Demo
 
+**LIVE_DEMO / FICTIONAL BRAND** · [Try the Vercel site](https://0-1-b2b-demo-demo-novamach.vercel.app/) · [Case study](docs/case-study.md) · [Resume bullets](docs/resume-bullets.md) · [Interview notes](docs/interview-notes.md)
+
 ![Fictional NovaMach home page](screenshots/novamach-home.webp)
 
 NovaMach is a fictional brand. This repository is a self-built demonstration project using sample data.
