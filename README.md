@@ -20,7 +20,7 @@ and local build output are intentionally excluded.
 
 ## 快速开始
 
-要求：Node.js 20+，pnpm 9+。
+要求：Node.js 24 LTS，pnpm 9+。
 
 ```bash
 pnpm install
