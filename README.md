@@ -1,29 +1,33 @@
-# NovaMach Industrial — B2B 外贸多语言独立站 Demo
+# NovaMach Industrial | Multilingual B2B Site Demo
 
-**LIVE_DEMO / FICTIONAL BRAND** · [Try the Vercel site](https://0-1-b2b-demo-demo-novamach.vercel.app/) · [Case study](docs/case-study.md) · [Resume bullets](docs/resume-bullets.md) · [Interview notes](docs/interview-notes.md)
+A **fictional industrial catalog and quotation workflow** built with React, TypeScript and Vite. The public demo has eight sample products, English / 简体中文 / Español, and a browser-only loop from request for quotation (RFQ) to a demo admin inbox.
+
+[Open the live demo](https://0-1-b2b-demo-demo-novamach.vercel.app/) · [Inspect a product](https://0-1-b2b-demo-demo-novamach.vercel.app/products/nx-500-five-axis) · [Open the demo inbox](https://0-1-b2b-demo-demo-novamach.vercel.app/admin-demo) · [Read the case study](docs/case-study.md)
+
+> **Fictional brand. Sample data only.** Nothing is sent to a sales team. The RFQ and admin demo share `localStorage` in the same browser and origin; there is no backend, account, real inquiry delivery or CRM.
+
+## 60 秒体验
+
+1. 打开产品页，切换语言，再进入询盘表单。
+2. 试用合成姓名和示例地址（如 `demo@example.com`），不要填真实个人或公司信息。
+3. 在同一浏览器与同一站点打开 [询盘后台演示](https://0-1-b2b-demo-demo-novamach.vercel.app/admin-demo)，查看刚保存的模拟询盘；换浏览器或清除站点数据不会同步保留它。
+
+| 可查看的证据 | 证明了什么 |
+| --- | --- |
+| [截图](screenshots/) · [案例](docs/case-study.md) | 响应式产品展示、三语内容和完整演示路径。 |
+| [架构](docs/architecture.md) · [验证说明](docs/verification.md) | 浏览器存储边界；构建、lint、类型检查及静态产物检验。 |
+| [部署说明](DEPLOYMENT.md) | 2026-09-23 手动验证的 Vercel 演示对应 `01f9eeb`；不要把最新 GitHub 提交当作网站已部署凭据。 |
 
 ![Fictional NovaMach home page](screenshots/novamach-home.webp)
 
-NovaMach is a fictional brand. This repository is a self-built demonstration project using sample data.
-
-**Live Demo:** <https://0-1-b2b-demo-demo-novamach.vercel.app/> · Code commit `01f9eeb` · rebuilt 2026-09-23 on the existing Vercel project. The current production alias was checked against the rebuilt asset names, seven direct routes, canonical/OG URLs, robots, desktop/mobile layout, language selection and a synthetic RFQ-to-admin round trip. This is a fictional product demo, not a customer site.
-
-> **Demonstration Website / Sample Data**
->
-> 这是一个虚构品牌的产品演示项目。网站中的公司、产品、参数、认证、客户、案例、联系方式和业务数据均为模拟内容，不构成真实声明。
-
-一个可直接用于渠道客户演示的 React + TypeScript + Vite 工业 B2B 独立站。视觉方向为“精密制造编辑部”：石墨黑、矿物灰、警示橙，大型工业排版与技术图纸网格。
-
-This public repository contains only the fictional product demo. Internal
-delivery notes, channel material, customer-specific copy, deployment records,
-and local build output are intentionally excluded.
+本仓库仅包含自主搭建的虚构品牌演示。公司、产品参数、认证、客户、联系方式和业务数据均为样例。真实客户材料、内部渠道材料和私有交付物不在公开仓库中。
 
 ## 快速开始
 
 要求：Node.js 24 LTS，pnpm 9+。
 
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
@@ -33,6 +37,7 @@ pnpm dev
 pnpm lint
 pnpm typecheck
 pnpm build
+pnpm smoke
 pnpm preview
 ```
 
@@ -100,7 +105,7 @@ pnpm preview
 - `public/assets/`：项目内工业视觉资产
 - `public/sitemap.xml` / `robots.txt`：基础 SEO
 
-More public engineering notes are in [`docs/`](docs/).
+更多项目材料：[架构](docs/architecture.md) · [简历要点](docs/resume-bullets.md) · [面试说明](docs/interview-notes.md)。
 
 ## 素材说明
 
